@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM VALIDATION</h1>
+    <form name="fg" onsubmit="validateForm()":
+    Name :input type="text" name="gn"><br><br>
+<input type="submit" value="Submit Details"><br>
+<p id="hai">0</p></form>
+<script>
+    function validateForm()
+    {
+        var t = document.form['fg']['gn'].value;
+        if (t==" ")
+        {
+            document.getElementById('hai').innerHTML ='Enter the valid details!';
+            return False;
+        }
+        else{
+            document.getElementById('hai').innerHTML ='The value that you have enteredis '+n;
+        }
+    }
+</script>
+</body>
+</html>
